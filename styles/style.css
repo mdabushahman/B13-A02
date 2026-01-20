@@ -116,7 +116,7 @@ nav{
     align-items: center;
     flex-direction: column;
     text-align: center;
-    /* border: 2px solid white */
+
 }
 .circle{
     width:35rem ;
@@ -126,7 +126,6 @@ nav{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* border: 2px solid white; */
     gap: 50px;
 }
 #badge{
@@ -160,11 +159,10 @@ nav{
 
 #about{
     width:100%;
-    /* border: 2px solid white; */
+    
 }
 .about-container{
     width:100%;
-    /* margin: 0px auto; */
     padding-top: 50px;
     text-align: center;
     display: flex;
@@ -175,7 +173,6 @@ nav{
 }
 
 .podcast {
-    /* text-align: center; */
     width: 50%;
     margin: 0px auto;
     
@@ -214,15 +211,15 @@ hr{
 /* WHY */
 #why{
     width: 100%;
-    /* text-align: center; */
-    /* margin: 0px auto; */
     color: white;
+    position: relative;
+    top: -50px;
 }
 .why-container{
-    width: 900px;
+    width: 1000px;
     margin: 0px auto;
     padding:120px 0px;
-    /* border: 2px solid white; */
+
     
 }
 .why-container h1{
@@ -230,12 +227,9 @@ hr{
     margin-bottom: 40px;
 }
 .why-card{
-     /* border: 2px solid white; */
      padding:40px ;
      border-radius: 40px;
      background-color: rgba(53, 17, 101, 0.4)
-     /* width: fit-content; */
-     /* height: fit-content; */
 }
 .why-card img{
     width: 40px;
@@ -256,12 +250,119 @@ hr{
 
 #fat{
     grid-column: span 2;
-    /* grid-row: span 1; */
 }
 #tall{
-    /* grid-column: span 1; */
     grid-row: span 2;
 }
+
+/* Episode */
+#featured{
+    width: 100%;
+    color: white;
+    position: relative;
+    top: -200px;
+
+}
+.featured-container{
+    width: 1000px;
+    margin: 0px auto;
+    padding:120px 0px;
+
+}
+.featured-container h1{
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+iframe{
+    border-top-left-radius: 15px ;
+    border-top-right-radius: 15px;
+    width: 320px;
+    height:214px;
+
+}
+.episode{
+    width: 100%;
+    display: flex;
+    gap:30px;
+    justify-content: center;
+}
+.episode-card{
+     border-radius: 15px;
+     width: 380px;
+     background-color: rgba(53, 17, 101, 0.4)
+}
+.card{
+    margin: 0px auto;
+    padding:0px 24px
+}
+
+.duration{
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+.duration img{
+    width: 20px ;
+    height:20px ;
+}
+.duration p{
+    font-size: 16px;
+    font-weight: 600;
+    color: #00FF88;
+}
+
+
+/* footer */
+#footer{
+    background:url(../assets/footer-bg.png);
+    background-repeat: no-repeat;
+    max-width:1600px;
+    height:388px;
+    background-size: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.footer-container{
+    margin: 120px;
+    width:fit-content;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.sponsor{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+   
+}
+.sponsor-card{
+    width:130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    position: relative;
+    top:-40px;
+
+
+}
+
+.footer-logo{
+    font-size: 6rem;
+    font-weight: bolder;
+}
+
 
 
 
@@ -284,7 +385,6 @@ hr{
 {   
     /* BANNER */
     header{
-     /* border: 2px solid white; */
      height:400px;
             }
         .menu, nav button{
@@ -294,7 +394,6 @@ hr{
                 display:block;
             }
          #banner{
-            /* border: 2px solid white; */
             background-repeat: no-repeat;
             background-size: 100% 40%;
             max-width: 100%;
@@ -347,7 +446,6 @@ hr{
             width:100%;
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        /* gap: 0px; */
         justify-content: center;
         color: white;
         }
@@ -368,9 +466,12 @@ hr{
         .about-item{
             width: 100%;
         }
+
         /* WHY */
         #why{
            max-width: 100%;
+           position: relative;
+           top: -100px;;
         }
         .why-container{
             max-width:100%;
@@ -380,6 +481,66 @@ hr{
             flex-direction: column;
     
         }
+
+        /* Episod */
+        #featured{
+            max-width: 100%;
+            position: relative;
+            top:-300px;
+        }
+        .featured-container{
+            max-width: 100%;
+        }
+        .episode{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    .episode-card{
+
+            border-radius: 15px;
+            width: 320px;
+            background-color: rgba(53, 17, 101, 0.4)
+                }
+
+                /* Footer */
+    #footer{
+    height:fit-content;
+    background-size: 100%;
+    /* margin-top: -200px; */
+
+}
+.footer-container{
+    margin: 0px auto;
+
+}
+.sponsor{
+    grid-template-columns: repeat(2,1fr);
+    gap:5px;
+}
+.sponsor-card{
+    width: fit-content;
+    gap: 8px;
+    font-size: .5rem;
+    position: relative;
+    top:-20px;
+
+
+}
+
+.footer-logo{
+    font-size: 2rem;
+    font-weight: bolder;
+    position: relative;
+    right: 2px;
+    top: -15px;
+}
+.footer-container p{
+    font-size: .5rem;
+    position: relative;
+    top: -20px;
+}
+
 
 
             
