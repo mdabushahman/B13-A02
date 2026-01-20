@@ -13,6 +13,9 @@ html{
 
 
 /* SHARED */
+body{
+    background-color: #1A0B2E;
+}
 
 .gradient-text{
     background: -webkit-linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
@@ -54,13 +57,17 @@ html{
 
 }
 
-.section-header{
+.section-heading{
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
 
 }
 .paragraph{
     font-size: 1rem;
     color: white;
     opacity:80%;
+    line-height: 20px;
 
 }
 /* Navbar */
@@ -147,9 +154,89 @@ nav{
     gap:8px;
 }
 
+
+
+/* About The Podcast */
+
+#about{
+    width:100%;
+    /* border: 2px solid white; */
+}
+.about-container{
+    width:;
+    /* margin: 0px auto; */
+    padding-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.podcast {
+    /* text-align: center; */
+    width: 50%;
+    margin: 0px auto;
+    
+}
+
+hr{
+    opacity: 10%;
+    width: 100%;
+    margin: 40px 0px;
+}
+.rating{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 40px;
+    justify-content: center;
+}
+.about-item{
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 50px;
+    
+}
+.about-item h1{
+    font-size: 3rem;
+    color: #00FF88;
+    font-weight: bolder;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:576px)
 {   
     /* BANNER */
+    header{
+     /* border: 2px solid white; */
+     height:400px;
+            }
         .menu, nav button{
             display:none;
         }
@@ -157,6 +244,7 @@ nav{
                 display:block;
             }
          #banner{
+            /* border: 2px solid white; */
             background-repeat: no-repeat;
             background-size: 100% 40%;
             max-width: 100%;
@@ -203,6 +291,32 @@ nav{
         }
         .btn{
             gap:8px;
+        }
+        /* About */
+        .rating{
+            width:100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        /* gap: 0px; */
+        justify-content: center;
+        color: white;
+        }
+        #about{
+        max-width: 100%;
+        }
+        hr{
+            width: 100%;
+            text-align: center;
+            margin: 40px 0px;
+        }
+        .about-container{
+            max-width: 100%;
+        }
+        .podcast{
+            width:100%;
+        }
+        .about-item{
+            width: 100%;
         }
 
 
