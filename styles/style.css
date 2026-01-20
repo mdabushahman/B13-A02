@@ -26,7 +26,7 @@ body{
     display: flex;
 }
 .button-primary{
-    font-size: 1rem;
+    font-size: 1.6rem;
     font-weight: 600;
     padding:12px 16px;
     border: none;
@@ -41,7 +41,7 @@ body{
     border: 2px solid #FB09B4;
 }
 .button-secondary{
-    font-size: 1rem;
+    font-size: 1.6rem;
     font-weight: 600;
     padding:12px 16px;
     border: 2px solid #00FF88;
@@ -58,13 +58,14 @@ body{
 }
 
 .section-heading{
-    font-size: 3rem;
+    font-size: 4.8rem;
     font-weight: bold;
     color: white;
+    text-align: center;
 
 }
 .paragraph{
-    font-size: 1rem;
+    font-size: 1.6rem;
     color: white;
     opacity:80%;
     line-height: 20px;
@@ -236,7 +237,7 @@ hr{
     height: 40px;
 }
 .why-card h2{
-    font-size: 1.5rem;
+    font-size: 2.4rem;
     font-weight: bold;
 }
 
@@ -290,11 +291,15 @@ iframe{
 .episode-card{
      border-radius: 15px;
      width: 380px;
-     background-color: rgba(53, 17, 101, 0.4)
+     background-color: rgba(53, 17, 101, 0.4);
 }
 .card{
     margin: 0px auto;
-    padding:0px 24px
+    padding:0px 24px;
+}
+.card h2{
+    font-size: 2.4rem;
+    font-weight: bold;
 }
 
 .duration{
@@ -354,13 +359,55 @@ iframe{
     font-size: 16px;
     position: relative;
     top:-40px;
-
-
 }
 
 .footer-logo{
     font-size: 6rem;
     font-weight: bolder;
+}
+
+/* Meet The HOST */
+#host{
+    width: 100%;
+    color: white;
+    position: relative;
+    top: -200px;
+
+}
+.host-container{
+    width: 1000px;
+    margin: 0px auto;
+    padding:120px 0px;
+
+}
+
+.host{
+    display: flex;
+    gap: 24px;
+    background-color: rgba(53, 17, 101, 0.4);
+    padding: 40px;
+    border: none;
+    border-radius: 40px;
+}
+.host-content h2{
+    font-size: 2.4rem;
+    font-weight: bold;
+
+}
+.host-content p{
+    font-size: 1.4rem;
+}
+.social img{
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    border: 1px solid #412567;
+    border-radius: 10px;
+}
+    
+.social{
+    display: flex;
+    gap: 8px;
 }
 
 
@@ -540,8 +587,21 @@ iframe{
     position: relative;
     top: -20px;
 }
-
-
-
+#host{
+            max-width: 100%;
+            position: relative;
+            top:-400px;
+}
+.host{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background-color: rgba(53, 17, 101, 0.4);
+    padding: 40px;
+    border: none;
+    border-radius: 40px;
             
+}
+.host-container{
+    max-width: 100%;
 }
