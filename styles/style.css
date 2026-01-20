@@ -371,7 +371,8 @@ iframe{
     width: 100%;
     color: white;
     position: relative;
-    top: -200px;
+    top: 0;
+    margin-top: -120px; /* safer: pulls section up without leaving vacated flow space */
 
 }
 .host-container{
@@ -430,178 +431,195 @@ iframe{
 
 @media screen and (max-width:576px)
 {   
-    /* BANNER */
-    header{
-     height:400px;
-            }
-        .menu, nav button{
-            display:none;
-        }
-        .burger-menu{
-                display:block;
-            }
-         #banner{
-            background-repeat: no-repeat;
-            background-size: 100% 40%;
-            max-width: 100%;
-        }
-        .banner-container{
-            width: 100%;
-            position: relative;
-            top: -220px;
-            overflow: auto;
+            /* BANNER */
+            header{
+            height:400px;
+                    }
+                .menu, nav button{
+                    display:none;
+                }
+                .burger-menu{
+                        display:block;
+                    }
+                #banner{
+                    background-repeat: no-repeat;
+                    background-size: 100% 40%;
+                    max-width: 100%;
+                }
+                .banner-container{
+                    width: 100%;
+                    position: relative;
+                    top: -220px;
+                    overflow: auto;
 
-        }
-
-        .circle{
-            width: 100px;
-            height:100px;
-            background-size: contain;
-            flex-direction: column;
-            position:  relative;
-            top: 50px;
-
-
-        }
-        .circle img{
-            width: 30%;
-
-        }
-        #badge{
-            position: absolute;
-            left: -120px;
-            top: 80px;
-        }
-        .wave{
-            width: 50%;
-            position: relative;
-            top: 30px;
-        }
-        .wave h1{
-            color: white;
-            font-size: 3rem;
-            font-weight: bold;
-        }
-        .wave p{
-            margin-bottom: 40px;
-        }
-        .btn{
-            gap:8px;
-        }
-        /* About */
-        .rating{
-            width:100%;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        justify-content: center;
-        color: white;
-        }
-        #about{
-        max-width: 100%;
-        }
-        hr{
-            width: 100%;
-            text-align: center;
-            margin: 40px 0px;
-        }
-        .about-container{
-            max-width: 100%;
-        }
-        .podcast{
-            width:100%;
-        }
-        .about-item{
-            width: 100%;
-        }
-
-        /* WHY */
-        #why{
-           max-width: 100%;
-           position: relative;
-           top: -100px;;
-        }
-        .why-container{
-            max-width:100%;
-        }
-        .why-item{
-            display: flex;
-            flex-direction: column;
-    
-        }
-
-        /* Episod */
-        #featured{
-            max-width: 100%;
-            position: relative;
-            top:-300px;
-        }
-        .featured-container{
-            max-width: 100%;
-        }
-        .episode{
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-    .episode-card{
-
-            border-radius: 15px;
-            width: 320px;
-            background-color: rgba(53, 17, 101, 0.4)
                 }
 
-                /* Footer */
-    #footer{
-    height:fit-content;
-    background-size: 100%;
-    /* margin-top: -200px; */
-
-}
-.footer-container{
-    margin: 0px auto;
-
-}
-.sponsor{
-    grid-template-columns: repeat(2,1fr);
-    gap:5px;
-}
-.sponsor-card{
-    width: fit-content;
-    gap: 8px;
-    font-size: .5rem;
-    position: relative;
-    top:-20px;
+                .circle{
+                    width: 100px;
+                    height:100px;
+                    background-size: contain;
+                    flex-direction: column;
+                    position:  relative;
+                    top: 50px;
 
 
-}
+                }
+                .circle img{
+                    width: 30%;
 
-.footer-logo{
-    font-size: 2rem;
-    font-weight: bolder;
-    position: relative;
-    right: 2px;
-    top: -15px;
-}
-.footer-container p{
-    font-size: .5rem;
-    position: relative;
-    top: -20px;
-}
-#host{
+                }
+                #badge{
+                    position: absolute;
+                    left: -120px;
+                    top: 80px;
+                }
+                .wave{
+                    width: 50%;
+                    position: relative;
+                    top: 30px;
+                }
+                .wave h1{
+                    color: white;
+                    font-size: 3rem;
+                    font-weight: bold;
+                }
+                .wave p{
+                    margin-bottom: 40px;
+                }
+                .btn{
+                    gap:8px;
+                }
+                /* About */
+                .rating{
+                    width:100%;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                justify-content: center;
+                color: white;
+                }
+                #about{
+                max-width: 100%;
+                }
+                hr{
+                    width: 100%;
+                    text-align: center;
+                    margin: 40px 0px;
+                }
+                .about-container{
+                    max-width: 100%;
+                }
+                .podcast{
+                    width:100%;
+                }
+                .about-item{
+                    width: 100%;
+                }
+
+                /* WHY */
+                #why{
+                max-width: 100%;
+                position: relative;
+                top: -100px;;
+                }
+                .why-container{
+                    max-width:100%;
+                }
+                .why-item{
+                    display: flex;
+                    flex-direction: column;
+            
+                }
+
+                /* Episod */
+                #featured{
+                    max-width: 100%;
+                    position: relative;
+                    top:-300px;
+                }
+                .featured-container{
+                    max-width: 100%;
+                }
+                .episode{
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+            .episode-card{
+
+                    border-radius: 15px;
+                    width: 320px;
+                    background-color: rgba(53, 17, 101, 0.4)
+                        }
+
+                        /* Footer */
+            #footer{
+            height:fit-content;
+            background-size: 100%;
+
+            }
+            .footer-container{
+                margin: 0px auto;
+
+            }
+            .sponsor{
+                grid-template-columns: repeat(2,1fr);
+                gap:5px;
+            }
+            .sponsor-card img{
+                width: 10px;
+                height: 10px;
+
+            }
+            .sponsor-card{
+                width: fit-content;
+                gap: 8px;
+                font-size: .5rem;
+                position: relative;
+                top:-20px;
+
+
+            }
+
+            .footer-logo{
+                font-size: 2rem;
+                font-weight: bolder;
+                position: relative;
+                right: 0px;
+                top: -10px;
+            }
+            .footer-container p{
+                font-size: .5rem;
+                position: relative;
+                top: -25px;
+            }
+            #host{
             max-width: 100%;
             position: relative;
-            top:-400px;
-}
-.host{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    background-color: rgba(53, 17, 101, 0.4);
-    padding: 40px;
-    border: none;
-    border-radius: 40px;
-            
-}
-.host-container{
-    max-width: 100%;
+            top: 0;
+            margin-top: -80px; 
+            }
+            .host{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 24px;
+                background-color: rgba(53, 17, 101, 0.4);
+                padding: 40px;
+                border: none;
+                border-radius: 40px;
+                        
+            }
+            .host-content{
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            .social{
+                justify-content: center;
+            }
+            .host-container{
+                max-width: 100%;
+            }
+
 }
