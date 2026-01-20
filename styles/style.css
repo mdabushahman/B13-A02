@@ -163,7 +163,7 @@ nav{
     /* border: 2px solid white; */
 }
 .about-container{
-    width:;
+    width:100%;
     /* margin: 0px auto; */
     padding-top: 50px;
     text-align: center;
@@ -183,8 +183,9 @@ nav{
 
 hr{
     opacity: 10%;
-    width: 100%;
+    width: 900px;
     margin: 40px 0px;
+    text-align: center;
 }
 .rating{
     display: grid;
@@ -210,8 +211,57 @@ hr{
 }
 
 
+/* WHY */
+#why{
+    width: 100%;
+    /* text-align: center; */
+    /* margin: 0px auto; */
+    color: white;
+}
+.why-container{
+    width: 900px;
+    margin: 0px auto;
+    padding:120px 0px;
+    /* border: 2px solid white; */
+    
+}
+.why-container h1{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.why-card{
+     /* border: 2px solid white; */
+     padding:40px ;
+     border-radius: 40px;
+     background-color: rgba(53, 17, 101, 0.4)
+     /* width: fit-content; */
+     /* height: fit-content; */
+}
+.why-card img{
+    width: 40px;
+    height: 40px;
+}
+.why-card h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 
+.why-item{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 30px;
+    
+}
 
+#fat{
+    grid-column: span 2;
+    /* grid-row: span 1; */
+}
+#tall{
+    /* grid-column: span 1; */
+    grid-row: span 2;
+}
 
 
 
@@ -317,6 +367,18 @@ hr{
         }
         .about-item{
             width: 100%;
+        }
+        /* WHY */
+        #why{
+           max-width: 100%;
+        }
+        .why-container{
+            max-width:100%;
+        }
+        .why-item{
+            display: flex;
+            flex-direction: column;
+    
         }
 
 
